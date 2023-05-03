@@ -4,7 +4,7 @@ const urlRoute = require("./routes/url");
 const URL = require("./models/url");
 
 const app = express();
-const PORT = 8001;
+const PORT = process.env.PORT || 8001;
 
 connectToMongoDB(
   "mongodb+srv://jagan:5e9HQY5sGf5UW18Y@cluster0.91dfxi5.mongodb.net/?retryWrites=true&w=majority"
